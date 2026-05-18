@@ -54,7 +54,7 @@ void ListarDLL(DWORD pid, FILE* output_file){
 
     if (Module32First(hsnap, &me)){
         fprintf(output_file, "Resolving DLLs for PID: %u \n", pid);
-        printf("Resolvendo DLLs para o pid: %u \n", pid);
+        printf("Resolving DLLs for PID: %u \n", pid);
 
         do {
             fprintf(output_file, "Name:   %s |    Path:   %s |", me.szModule , me.szExePath);
