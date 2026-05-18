@@ -3,11 +3,14 @@
 ```markdown
 # 🎯 Process Hunt: In-Memory Module & Export Enumerator
 
-> Process Hunt is a C-based memory enumeration tool designed to analyze running Windows processes. It utilizes the Toolhelp32 API to find specific targets, maps their loaded DLLs, and uses `ReadProcessMemory` to extract their Export Directory Tables dynamically into a `.txt` report.
+> Process Hunt is a C-based memory enumeration tool designed to analyze running Windows processes.
+It utilizes the Toolhelp32 API to find specific targets, maps their loaded DLLs, and uses `ReadProcessMemory` to extract their Export Directory Tables dynamically into a `.txt` report.
 
 ## 📖 About the Project
 
-Process Hunt is a proof-of-concept security tool focused on dynamic memory analysis and module enumeration. Modeled after techniques utilized by malware analysts, game cheat developers, and EDR (Endpoint Detection and Response) systems, it actively interacts with the virtual memory space of live processes. 
+Process Hunt is a proof-of-concept security tool focused on dynamic memory analysis and module enumeration.
+Modeled after techniques utilized by malware analysts, game cheat developers, and EDR (Endpoint Detection and Response) systems,
+it actively interacts with the virtual memory space of live processes. 
 
 By leveraging the Windows API, it parses PE structures directly from RAM, successfully extracting a complete list of exported functions from all loaded DLLs within the target process.
 
